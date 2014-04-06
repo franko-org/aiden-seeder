@@ -339,7 +339,7 @@ extern "C" void* ThreadStats(void*) {
   } while(1);
 }
 
-static const string mainnet_seeds[] = {"dnsseed.meningslos.info", "ams1.aiden.org", "ams2.aiden.org", "ams3.aiden.org", "ams4.aiden.org", "nl1.aiden.org", "nl2.aiden.org", "se1.aiden.org", "ny.aiden.org", "la.aiden.org", "eu.aiden.org",  ""};
+static const string mainnet_seeds[] = {"adnseed.crypto-knight.org", "adnseed2.crypto-knight.org", "ams2.aiden.org", "ams3.aiden.org", "ams4.aiden.org", "nl1.aiden.org", "nl2.aiden.org", "se1.aiden.org", "ny.aiden.org", "la.aiden.org", "eu.aiden.org",  ""};
 static const string testnet_seeds[] = {"testnet-seed.aiden.org", ""};
 static const string *seeds = mainnet_seeds;
 
