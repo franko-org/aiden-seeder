@@ -31,7 +31,7 @@ public:
   CDnsSeedOpts() : nThreads(96), nDnsThreads(4), nPort(53), mbox(NULL), ns(NULL), host(NULL), tor(NULL), fUseTestNet(false), fWipeBan(false), fWipeIgnore(false) {}
 
   void ParseCommandLine(int argc, char **argv) {
-    static const char *help = "Aiden-seeder\n"
+    static const char *help = "franko-seeder\n"
                               "Usage: %s -h <host> -n <ns> [-m <mbox>] [-t <threads>] [-p <port>]\n"
                               "\n"
                               "Options:\n"
@@ -339,13 +339,13 @@ extern "C" void* ThreadStats(void*) {
   } while(1);
 }
 
-static const string mainnet_seeds[] = {"dnsseed.copiamarket.com", "dnsseed.frankos.org", "tokyo.briefcaseit.com", "frk.dencoinpools.com", "www.crypto-knight.org", "www.frankopedia.com", "nl2.franko.org", "se1.franko.org", "ny.franko.org", "la.franko.org", "eu.franko.org",  ""};
+static const string mainnet_seeds[] = {"www.dirtydiggers.org","www.frankos.org", "seed.frankos.org", "seed2.frankos.org", "seed3.frankos.org", "seed4.frankos.org", "seed5.frankos.org", "seed6.frankos.org", "seed7.frankos.org", ""};
 static const string testnet_seeds[] = {"testnet-seed.franko.org", ""};
 static const string *seeds = mainnet_seeds;
 
 extern "C" void* ThreadSeeder(void*) {
   if (!fTestNet){
-    db.Add(CService("kjy2eqzk4zwi5zd3.onion", 7912), true);
+    db.Add(CService("franko7ehtmbjmvx.onion", 7912), true);
   }
   do {
     for (int i=0; seeds[i] != ""; i++) {
